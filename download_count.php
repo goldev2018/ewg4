@@ -50,16 +50,18 @@ fwrite($handle, $qwe);
 
 
 $file_url = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
-
-
+// $filename = 'downloadedpdf.pdf';
+header('Content-Description: File Transfer');
 header('Content-Type: application/octet-stream');
-
-header("Content-Transfer-Encoding: Binary");
-
-header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\"");
-
-readfile($file_url);
-
+header('Content-Disposition: attachment; filename="'.$file_url.'"');
+header('Content-Transfer-Encoding: binary');
+header('Expires: 0');
+header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+header('Pragma: public');
+header('Content-Length: ' . filesize($file_url)); //Absolute URL
+ob_clean();
+flush();
+readfile($file_url); //Absolute URL
 exit();
 		// $pdfname = basename ($file_url);
 		// header('Content-Type: application/pdf');
