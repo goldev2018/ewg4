@@ -31,7 +31,7 @@ $line=explode("\n",$doc);
 foreach($line as $newline){
     $qwe = $newline+1;
 }
-echo $qwe;
+
 
 
 $my_file = 'include/count.txt';
@@ -40,22 +40,22 @@ $data = 'This is the data';
 fwrite($handle, $qwe);
 
 
-$file = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
+// $file = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
 
-if (file_exists($file)) {
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename='.basename($file));
-    header('Content-Transfer-Encoding: binary');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($file));
-    ob_clean();
-    flush();
-    readfile($file);
-    exit;
-}
+// if (file_exists($file)) {
+//     header('Content-Description: File Transfer');
+//     header('Content-Type: application/octet-stream');
+//     header('Content-Disposition: attachment; filename='.basename($file));
+//     header('Content-Transfer-Encoding: binary');
+//     header('Expires: 0');
+//     header('Cache-Control: must-revalidate');
+//     header('Pragma: public');
+//     header('Content-Length: ' . filesize($file));
+//     ob_clean();
+//     flush();
+//     readfile($file);
+//     exit;
+// }
 
 
 // $file_url = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
@@ -70,3 +70,19 @@ if (file_exists($file)) {
 
 
 ?>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta name="author" content="">
+
+    <title>Download Files</title>
+</head>
+<body>
+
+<meta http-equiv="refresh" content="0;url=download_file.php" />
+Thank you for downloading the file...
+</body>
+</html>
