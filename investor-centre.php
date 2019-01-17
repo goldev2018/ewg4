@@ -30,7 +30,7 @@
 
 								<!-- <a href="downloads/Research Report - EWC - Alpha Deal - Final.pdf" style="color:#656565; text-decoration:none;"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a> -->
 
-								<a href="download_count.php" style="color:#656565; text-decoration:none;"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a>
+								<a href="download_count.php" style="color:#656565; text-decoration:none;" target="blank"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a>
 
 							</div>
 

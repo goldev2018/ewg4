@@ -51,11 +51,13 @@ fwrite($handle, $qwe);
 
 $file_url = 'downloads/Research Report - EWC - Alpha Deal - Final.pdf';
 
-header('Content-Type: application/octet-stream');
-header("Content-Transfer-Encoding: Binary"); 
-header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
-readfile($file_url); 
-
+		$pdfname = basename ($file_url);
+		header('Content-Type: application/pdf');
+		header("Content-Transfer-Encoding: Binary");
+		header("Content-disposition: attachment; filename=".$pdfname);
+		flush();
+		readfile($file_url);
+		exit();
 
 
 
