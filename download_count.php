@@ -49,7 +49,7 @@ fwrite($handle, $qwe);
     // fclose($fp);
 
 
-$file_url = 'downloads/Research Report - EWC - Alpha Deal - Final.pdf';
+$file_url = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
 
 		$pdfname = basename ($file_url);
 		header('Content-Type: application/pdf');
