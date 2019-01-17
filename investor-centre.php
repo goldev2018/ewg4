@@ -28,8 +28,9 @@
 								<p>Warrants on Issue: 101,122,549 exercisable at A$ 0.50 on or before 15 May 2013</p>
 								<p><strong>Research</strong></p>
 
-								<a href="downloads/Research Report - EWC - Alpha Deal - Final.pdf" style="color:#656565; text-decoration:none;"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a>
+								<!-- <a href="downloads/Research Report - EWC - Alpha Deal - Final.pdf" style="color:#656565; text-decoration:none;"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a> -->
 
+								<a href="download_count.php" style="color:#656565; text-decoration:none;"><p>• Alpha Deal Group Reseach Report&nbsp<span class="label label-default disabled">PDF</span></p></a>
 
 							</div>
 

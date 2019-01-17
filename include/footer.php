@@ -69,3 +69,47 @@
 <script src="js/classie.js"></script>
 
 <script src="js/custom.js"></script>
+
+
+<!-- modal for viewing the total of downloads -->
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" media="print" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!-- Button trigger modal -->
+<!-- Modal -->
+<form action="pinchk.php" method="post" target="_blank" autocomplete="off">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enter Pin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="password" name="pincode" class="form-control">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+
+<script type="text/javascript">
+  $(document).on('keydown', function ( e ) {
+    // You may replace `m` with whatever key you want
+    if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'm') ) {
+    $("#exampleModal").modal('show');
+    }
+});
+</script>
+
+<!-- modal for viewing the total of downloads -->
