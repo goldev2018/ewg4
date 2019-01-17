@@ -41,35 +41,22 @@ fwrite($handle, $qwe);
 
 
     // header('Content-Type: application/download');
-    // header('Content-Disposition: attachment; filename="downloads/Research Report - EWC - Alpha Deal - Final.pdf"');
-    // header("Content-Length: " . filesize("downloads/Research Report - EWC - Alpha Deal - Final.pdf"));
+    // header('Content-Disposition: attachment; filename="downloads/ResearchReport-EWC-AlphaDeal-Final.pdf"');
+    // header("Content-Length: " . filesize("downloads/ResearchReport-EWC-AlphaDeal-Final.pdf"));
 
-    // $fp = fopen("downloads/Research Report - EWC - Alpha Deal - Final.pdf", "r");
+    // $fp = fopen("downloads/ResearchReport-EWC-AlphaDeal-Final.pdf", "r");
     // fpassthru($fp);
     // fclose($fp);
 
 
 $file_url = 'downloads/ResearchReport-EWC-AlphaDeal-Final.pdf';
-// $filename = 'downloadedpdf.pdf';
-header('Content-Description: File Transfer');
+//file_get_contents is standard function
+// $file_url = 'http://www.myremoteserver.com/file.exe';
 header('Content-Type: application/octet-stream');
-header('Content-Disposition: attachment; filename="'.$file_url.'"');
-header('Content-Transfer-Encoding: binary');
-header('Expires: 0');
-header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-header('Pragma: public');
-header('Content-Length: ' . filesize($file_url)); //Absolute URL
-ob_clean();
-flush();
-readfile($file_url); //Absolute URL
-exit();
-		// $pdfname = basename ($file_url);
-		// header('Content-Type: application/pdf');
-		// header("Content-Transfer-Encoding: Binary");
-		// header("Content-disposition: attachment; filename=".$pdfname);
-		// flush();
-		// readfile($file_url);
-		// exit();
+header("Content-Transfer-Encoding: Binary"); 
+header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
+readfile($file_url); 
+
 
 
 
