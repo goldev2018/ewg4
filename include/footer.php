@@ -72,12 +72,6 @@
 
 
 <!-- modal for viewing the total of downloads -->
-
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-
-    <link rel="stylesheet" media="print" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <!-- Button trigger modal -->
 <!-- Modal -->
 <form action="pinchk.php" method="post" target="_blank" autocomplete="off">
