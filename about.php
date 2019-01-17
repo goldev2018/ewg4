@@ -3,14 +3,22 @@
 <head>
 <?php include('include/header.php'); ?>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-default">
 		<header>
 			<?php include('include/navigation.php'); ?>
 		</header>
 				<section id="content">
-					<div class="container">
+					<div class="container animated fadeIn">
 						<div class="row">
 							<div class="col-lg-12"><h3>About Us</h3></div>
+							<!-- divider -->
+
+									<div class="col-lg-8">
+										<div class="solidline">
+										</div>
+									</div>
+
+							<!-- end divider -->
 							<div class="col-lg-8">
 								<div class="text-left">
 									<p><strong>Company Profile</strong></p>
@@ -41,16 +49,16 @@
 									<p><strong>Map of Operations</strong>
 										<a href="img/map-of-operations.png"><img src="img/map-of-operations.png" alt="" class="img-responsive animated fadeInUp" /></a>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-8">
 									<div class="text-left">
 										<p><strong>Board of Directors</strong></p>
 										<p>Stewart Elliott, Chairman and CEO </p>
 										<p>Brian Allen, Executive Director and Finance Director</p>
 										<p>Graham Elliott, Executive Director</p>
-										<p>Ian Jordan, Executive Director</p>
+										<p>KP Wong, Executive Director</p>
 										<p>Michael O’Neill, Independent Non-Executive Director</p>
 										<p>Leslie Charles, Independent Non-Executive Director</p>
-										<p>Winston Mandrawa, Independent Non-Executive Director</p>
+										<p>Winston Mandrawa, Non-Executive Director</p>
 									</div>
 								</div>
 							</div>

@@ -8,13 +8,20 @@
 	<?php include('include/navigation.php'); ?>
 </header>
 	<section id="content">
-		<div class="container">
+		<div class="container animated fadeIn">
 			<div class="row">
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 					<div class="text-left">
 						<h3>Projects</h3>
+						<div class="solidline"></div>
 						<p><strong>Philippines</strong></p>
 						<p>Our Philippines projects are located in Pagbilao Island, in the Quezon Province, approximately 90 kilometres South East of Manilla.</p>
+						<p><strong>Pagbilao Power Project</strong></p>
+
+								<p>In November 2018 the project was certified as an Energy Project of National Significance by the Philippines Department of Energy</p>
+
+							<a href="img/pagbilao.jpg"><img src="img/pagbilao.jpg" alt="" class="img-responsive animated fadeInUp" /></a>
+
 						<p><strong>LNG Hub Terminal</strong>
 							<ul>
 								<li>We are the 100% owner and developer of the Philippines first ever LNG Hub terminal, which we consider to be a strategically important asset for the Philippines nascent gas industry</li>
@@ -23,8 +30,8 @@
 								<li>Deep water jetty can handle all sizes of LNG vessels</li>
 								<li>The Hub Terminal will support our adjacent 650 MW combined cycle gas fired power plant, and provide expansion options for both EWC and third party gas clients</li>
 								<li>Hub Terminal to be run on a tolling model for third party clients</li>
+								<a href="img/lng-hub.jpg"><img src="img/lng-hub.jpg" alt="" class="img-responsive animated fadeInUp" /></a>
 							</ul>
-							<a href="img/lng-hub.jpg"><img src="img/lng-hub.jpg" alt="" class="img-responsive animated fadeInUp" /></a>
 						</p>
 						<p><strong>650 MW Combined Cycle Gas Fired Power Plant</strong></p>
 							<ul class="unstyled">
@@ -37,7 +44,7 @@
 								</li>
 								<li>Plant will secure gas from the adjacent LNG hub terminal</li>
 								<li>Electricity will initially be sold into the Wholesale Electricity Spot Market (“WESM”)</li>
-								<a href="img/powerblock.jpg"><img src="img/powerblock.jpg" alt="" class="img-responsive animated fadeInUp" /></a>
+								<a href="img/powerblock.jpg"><img src="img/powerblock.jpg" target="_parent" alt="" class="img-responsive animated fadeInUp" /></a>
 							</ul>
 							<p><strong>Indonesia</strong></p>
 							<p>Our Indonesian projects are located in the province of South Sulawesi.</p>
@@ -62,7 +69,7 @@
 							</ul>
 							<p><strong>Australia</strong></p>
 							<p>In Australia we have a number of gas fields.  We own:</p>
-							<p>100% of PL 65, PL 115, PL 116, and PL 1030-1033.  PL 65, PL 115 and PL 116 are connected to existing processing facilities and pipelines but are currently on care an maintenance.<p>
+							<p>100% of PL 65, PL 115, PL 116, PL 184, ATP 932 and PL 1030-1033.  PL 65, PL 115 and PL 116 are connected to existing processing facilities and pipelines and we have commerced the process to restart gas production from these field<p>
 							<p>33% of PEL 96 (Operator is Strike Energy)</p>
 							<p>2% of ATP 259 (Operator is Santos)</p>
 							<p>We also own:</p>

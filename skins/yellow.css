@@ -6,6 +6,10 @@ ul.meta-post li a:hover, ul.cat li a:hover, ul.recent li h6 a:hover, ul.portfoli
 	color:#ffcc00;
 }
 
+.nav .active {
+	color:#ffcc00;
+}
+
 .highlight {
   background-color: #ffcc00;
 }

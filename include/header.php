@@ -13,23 +13,12 @@
   gtag('config', 'UA-29457342-7');
 </script>
 
-<!-- js -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-
-<!-- css -->
-<link href="css/bootstrap.min.css" rel="stylesheet" />
-
-<!-- <link href="css/bootstrap.css" rel="stylesheet" /> -->
-<link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />
-<link href="css/cubeportfolio.min.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
-
-<!-- Theme skin -->
-<link id="t-colors" href="skins/yellow.css" rel="stylesheet" />
-
-<!-- boxed bg -->
-<link id="bodybg" href="bodybg/bg-c.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  .no-fouc {display: none;}
+</style>
+<script type="text/javascript">
+  document.documentElement.className = 'no-fouc';
+</script>
 
 <!-- favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
