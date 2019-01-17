@@ -40,14 +40,21 @@ $data = 'This is the data';
 fwrite($handle, $qwe);
 
 
-    header('Content-Type: application/download');
-    header('Content-Disposition: attachment; filename="downloads/Research Report - EWC - Alpha Deal - Final.pdf"');
-    header("Content-Length: " . filesize("downloads/Research Report - EWC - Alpha Deal - Final.pdf"));
+    // header('Content-Type: application/download');
+    // header('Content-Disposition: attachment; filename="downloads/Research Report - EWC - Alpha Deal - Final.pdf"');
+    // header("Content-Length: " . filesize("downloads/Research Report - EWC - Alpha Deal - Final.pdf"));
 
-    $fp = fopen("downloads/Research Report - EWC - Alpha Deal - Final.pdf", "r");
-    fpassthru($fp);
-    fclose($fp);
+    // $fp = fopen("downloads/Research Report - EWC - Alpha Deal - Final.pdf", "r");
+    // fpassthru($fp);
+    // fclose($fp);
 
+
+$file_url = 'downloads/Research Report - EWC - Alpha Deal - Final.pdf';
+
+header('Content-Type: application/octet-stream');
+header("Content-Transfer-Encoding: Binary"); 
+header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
+readfile($file_url); 
 
 
 

@@ -1,19 +1,9 @@
-<?php 
-$file="include/count.txt";
-$doc=file_get_contents($file);
-
-$line=explode("\n",$doc);
-foreach($line as $newline){
-    $qwe = $newline+1;
-}
-echo $qwe;
-
-
-$my_file = 'include/count.txt';
-$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
-$data = 'This is the data';
-fwrite($handle, $qwe);
-
-
-
- ?>
+<?php
+$file_url = 'downloads/Research Report - EWC - Alpha Deal - Final.pdf';
+//file_get_contents is standard function
+// $file_url = 'http://www.myremoteserver.com/file.exe';
+header('Content-Type: application/octet-stream');
+header("Content-Transfer-Encoding: Binary"); 
+header("Content-disposition: attachment; filename=\"" . basename($file_url) . "\""); 
+readfile($file_url); 
+    ?>
